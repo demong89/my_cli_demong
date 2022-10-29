@@ -8,7 +8,6 @@ import clone from "./../utils/clone.js";
 import { compile } from "./../utils/compile.js";
 import { log } from "./../utils/index.js";
 
-// console.log('我的脚手架')
 
 clear(); // 清屏
 const cliName = figlet.textSync("my_cli");
