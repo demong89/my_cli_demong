@@ -7,6 +7,10 @@ import inquirer from "inquirer";
 import clone from "./../utils/clone.js";
 import { compile } from "./../utils/compile.js";
 import { log } from "./../utils/index.js";
+import {getCommader} from './commander.js'
+
+
+
 
 
 clear(); // 清屏
@@ -14,6 +18,7 @@ const cliName = figlet.textSync("my_cli");
 const neon = chalkAnimation.neon(cliName);
 setTimeout(() => {
   neon.stop(); // Animation stops
+  getCommader()
   query();
 }, 1000);
 
