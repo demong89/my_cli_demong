@@ -18,8 +18,11 @@ const cliName = figlet.textSync("my_cli");
 const neon = chalkAnimation.neon(cliName);
 setTimeout(() => {
   neon.stop(); // Animation stops
-  getCommader()
-  query();
+  const commader = getCommader()
+  if(commader==='create'){
+    create();
+  }
+ 
 }, 1000);
 
 const opttions = {
@@ -36,7 +39,7 @@ const question = [
   },
 ];
 
-async function query() {
+async function create() {
   const answer = await inquirer.prompt(question);
   // console.log(`你的选择是：${answer.frame}`);
   if (answer.frame === "退出") return;
