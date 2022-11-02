@@ -6,6 +6,7 @@ import chalkAnimation from "chalk-animation";
 
 import {getCommader} from './commander.js'
 import {create} from './create.js'
+import getVersion from './getNodeVersion.cjs'
 
 
 
@@ -22,6 +23,7 @@ setTimeout(() => {
   if(commader==='create'){
     create();
   }
+  getVersion()
  
 }, 1000);
 
