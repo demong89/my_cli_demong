@@ -13,10 +13,10 @@ export const getCommader = () => {
 
 // 说明命令是create  创建项目
   if(process.argv.length>2&&process.argv[2] === 'create'){
-    console.log('这是创建的',process.argv[2]);
     return 'create'
   }
 
   const options = program.opts();
   console.log(options);
+  return options
 };
