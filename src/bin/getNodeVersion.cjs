@@ -1,10 +1,7 @@
 const semver = require('semver')
-
-
+const minNodeVersion = '12.0.1'
 const getVersion = ()=>{
-  console.log('commonjs 模块');
-  return semver.valid('1.2.3')
+  const nodeVersion = semver.valid(semver.coerce(process.version))
+  return semver.satisfies(nodeVersion,'>='+minNodeVersion)
 }
-
-
 module.exports = getVersion
