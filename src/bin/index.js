@@ -28,9 +28,6 @@ setTimeout(() => {
   if(!isMatchVersion){
     logWarning('您的node版本有点低，请升级到14及以上版本！')
     return
-  }else{
-    console.logWarning('可以的version版本');
-
   }
  
 }, 1000);
