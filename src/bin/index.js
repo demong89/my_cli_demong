@@ -7,6 +7,7 @@ import chalkAnimation from "chalk-animation";
 import {getCommader} from './commander.js'
 import {create} from './create.js'
 import getVersion from './getNodeVersion.cjs'
+import {logWarning} from './../utils/index.js'
 
 
 
@@ -23,7 +24,14 @@ setTimeout(() => {
   if(commader==='create'){
     create();
   }
-  getVersion()
+  const isMatchVersion = getVersion()
+  if(!isMatchVersion){
+    logWarning('您的node版本有点低，请升级到14及以上版本！')
+    return
+  }else{
+    console.logWarning('可以的version版本');
+
+  }
  
 }, 1000);
 
