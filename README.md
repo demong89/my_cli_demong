@@ -18,7 +18,7 @@ npm run dev
 3、加一个Vue3+vite+element-plus的空项目  
 4、一个react项目demo 【做管理后台，配合移动端项目】  
 5、一个node项目，用于给vue3和react项目 提供接口  
-6、一个完善的文档
+6、一个完善的文档   
 7、
 
 
