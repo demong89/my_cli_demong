@@ -8,7 +8,6 @@
     "my_cli": "./src/bin/index.js"
   },
   "scripts": {
-    "git": "git status && git add . && cm_addlongname && git push"
   },
   "author": "",
   "license": "ISC",
@@ -24,7 +23,6 @@
     "ora": "^6.1.2"
   },
   "devDependencies": {
-    "cm_addlongname": "^1.0.8",
     "commander": "^9.4.1",
     "semver": "^7.3.8"
   }
