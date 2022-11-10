@@ -29,6 +29,7 @@ setTimeout(() => {
     logWarning('您的node版本有点低，请升级到14及以上版本！')
     return
   }
+  
  
 }, 1000);
 

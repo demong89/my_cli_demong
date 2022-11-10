@@ -1,7 +1,7 @@
 // #!/usr/bin/env node
 // const  {program} = require('commander')
 import { Command } from "commander";
-import {startServer} from './../lib/start/startServer.js'
+import {startServer} from './../lib/start/startServer.cjs'
 import {buildServer} from './../lib/build/buildServer.js'
 const program = new Command();
 
