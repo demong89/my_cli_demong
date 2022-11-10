@@ -7,8 +7,7 @@
   "bin": {
     "my_cli": "./src/bin/index.js"
   },
-  "scripts": {
-  },
+  "scripts": {},
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -24,6 +23,7 @@
   },
   "devDependencies": {
     "commander": "^9.4.1",
+    "detect-port": "^1.5.1",
     "semver": "^7.3.8"
   }
 }
